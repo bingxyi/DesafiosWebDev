@@ -1,0 +1,84 @@
+/* styles.css */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3e9; /* Bege claro para o fundo */
+    color: #4a2c2a; /* Marrom escuro para o texto */
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #6d1a36; /* Vinho escuro */
+    color: #fff; /* Texto branco */
+    border-bottom: 5px solid #4a2c2a; /* Borda marrom escura */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h2 {
+    color: #6d1a36; /* Vinho escuro */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #6d1a36; /* Linha vinho abaixo dos títulos */
+    padding-bottom: 10px;
+}
+
+.eventos-futuros, .eventos-passados {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f7f3e9; /* Bege claro */
+    border-radius: 5px;
+    border-left: 5px solid #6d1a36; /* Borda vinho à esquerda */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais forte */
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #6d1a36; /* Vinho escuro */
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 5px 0;
+    color: #555; /* Cinza escuro */
+}
+
+strong {
+    color: #4a2c2a; /* Marrom escuro */
+}
+
+/* Estilo para links (caso adicione algum no futuro) */
+a {
+    color: #6d1a36; /* Vinho escuro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

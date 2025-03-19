@@ -1,0 +1,94 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff8c42; /* Laranja claro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Seção de Postagem */
+section#postagem {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário de Comentários */
+section#comentarios {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#comentarios form div {
+    margin-bottom: 15px;
+}
+
+section#comentarios label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+section#comentarios input,
+section#comentarios textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section#comentarios button {
+    background-color: #ff8c42; /* Laranja claro */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section#comentarios button:hover {
+    background-color: #e67e22; /* Laranja mais escuro */
+}
+
+/* Seção de Comentários Enviados */
+section#lista-comentarios {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comentario {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.comentario strong {
+    color: #ff8c42; /* Laranja claro */
+}
+
+/* Rodapé */
+footer {
+    background-color: #ff8c42; /* Laranja claro */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

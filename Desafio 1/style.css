@@ -1,0 +1,115 @@
+/* Variáveis CSS para o tema claro */
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --container-bg: #fff;
+    --container-shadow: rgba(0, 0, 0, 0.1);
+    --primary-color: #0073e6;
+    --social-icon-hover: scale(1.2);
+}
+
+/* Variáveis CSS para o tema escuro */
+[data-theme="dark"] {
+    --background-color: #1e1e1e;
+    --text-color: #f4f4f4;
+    --container-bg: #2d2d2d;
+    --container-shadow: rgba(255, 255, 255, 0.1);
+    --primary-color: #4dabf7;
+    --social-icon-hover: scale(1.2);
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Container principal */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--container-bg);
+    box-shadow: 0 0 10px var(--container-shadow);
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Título */
+h1 {
+    color: var(--primary-color);
+}
+
+/* Imagem de perfil */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid var(--primary-color);
+    transition: border-color 0.3s ease;
+}
+
+/* Biografia */
+.bio {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Lista de hobbies */
+.hobbies {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.hobbies h2 {
+    font-size: 1.2em;
+    color: var(--primary-color);
+}
+
+.hobbies ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.hobbies li {
+    margin-bottom: 10px;
+}
+
+/* Links das redes sociais */
+.social-links img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: var(--social-icon-hover);
+}
+
+/* Botão de alternância de tema */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--container-bg);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}

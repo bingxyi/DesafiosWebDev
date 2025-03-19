@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Presidente</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+
+</head>
+<body>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+
+    <div class="container">
+        <!-- Título com o nome da pessoa -->
+        <h1>João Silva</h1>
+
+        <!-- Imagem de perfil -->
+        <img src="joaosilva.png" alt="Foto de João Silva" class="profile-img">
+
+        <!-- Breve descrição ou biografia -->
+        <div class="bio">
+            <p>João Silva é o Presidente da empresa TELECOM INC, com mais de 20 anos de experiência no mercado de tecnologia. Ele é conhecido por sua visão estratégica e liderança inspiradora, que têm guiado a empresa a novos patamares de sucesso.</p>
+        </div>
+
+        <!-- Lista de hobbies ou interesses -->
+        <div class="hobbies">
+            <h2>Hobbies e Interesses</h2>
+            <ul>
+                <li>Leitura</li>
+                <li>Viagens</li>
+                <li>Tecnologia</li>
+                <li>Esportes</li>
+                <li>Fotografia</li>
+            </ul>
+        </div>
+
+        <!-- Imagens com links para redes sociais -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/joaosilva" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://twitter.com/joaosilva" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/joaosilva" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const htmlElement = document.documentElement;
+            const currentTheme = htmlElement.getAttribute("data-theme");
+            const newTheme = currentTheme === "light" ? "dark" : "light";
+            htmlElement.setAttribute("data-theme", newTheme);
+        }
+    </script>
+
+</body>
+</html>

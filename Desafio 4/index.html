@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog com Comentários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Meu Blog Pessoal</h1>
+    </header>
+
+    <!-- Seção de Postagem -->
+    <section id="postagem">
+        <h2>O Futuro das Telecomunicações: Como as redes 5G e 6G estão revolucionando a conectividade global</h2>
+        <p>
+            A evolução das telecomunicações tem sido um dos pilares da transformação digital no século XXI. Com a chegada das redes <strong>5G</strong> e os primeiros passos em direção ao <strong>6G</strong>, estamos testemunhando uma revolução na forma como nos conectamos, trabalhamos e vivemos.
+        </p>
+        <h3>O Impacto do 5G</h3>
+        <p>
+            O <strong>5G</strong> não é apenas uma atualização incremental em relação ao 4G; é uma mudança de paradigma. Com velocidades de download que podem atingir <strong>10 Gbps</strong>, latência ultrabaixa de <strong>1 ms</strong> e a capacidade de conectar até <strong>1 milhão de dispositivos por quilômetro quadrado</strong>, o 5G está abrindo portas para aplicações antes impensáveis. Desde carros autônomos até cirurgias remotas, a tecnologia está transformando setores inteiros.
+        </p>
+        <h3>Além do 5G: O 6G no Horizonte</h3>
+        <p>
+            Enquanto o 5G ainda está em expansão, pesquisadores e empresas já estão olhando para o futuro com o <strong>6G</strong>. Espera-se que o 6G ofereça velocidades de até <strong>1 Tbps</strong>, latência próxima de zero e uma integração profunda com inteligência artificial e realidade aumentada. Imagine um mundo onde hologramas são usados para comunicação em tempo real, ou onde sensores em rede monitoram cidades inteiras para otimizar recursos e prevenir desastres.
+        </p>
+        <h3>Desafios e Oportunidades</h3>
+        <p>
+            No entanto, a implementação dessas tecnologias não está livre de desafios. A infraestrutura necessária para suportar redes 5G e 6G é complexa e cara, exigindo investimentos maciços em torres de transmissão, fibra óptica e data centers. Além disso, questões de segurança e privacidade precisam ser abordadas para garantir que a conectividade avançada não se torne uma vulnerabilidade.
+        </p>
+        <h3>Conclusão</h3>
+        <p>
+            As redes de telecomunicações estão no coração da revolução digital. Com o 5G já em operação e o 6G no horizonte, o futuro promete uma conectividade sem precedentes, capaz de transformar não apenas a tecnologia, mas a própria sociedade. A pergunta que fica é: estamos prontos para abraçar essa nova era?
+        </p>
+    </section>
+
+    <!-- Formulário de Comentários -->
+    <section id="comentarios">
+        <h2>Deixe um Comentário</h2>
+        <form id="form-comentario">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar Comentário</button>
+        </form>
+    </section>
+
+    <!-- Seção para Exibir Comentários -->
+    <section id="lista-comentarios">
+        <h2>Comentários</h2>
+        <div id="comentarios-enviados">
+            <!-- Comentários serão exibidos aqui dinamicamente -->
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Meu Blog Pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para adicionar comentários dinamicamente -->
+    <script>
+        document.getElementById('form-comentario').addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o envio do formulário
+
+            // Captura os valores dos campos
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const comentario = document.getElementById('comentario').value;
+
+            // Cria um novo elemento de comentário
+            const novoComentario = document.createElement('div');
+            novoComentario.classList.add('comentario');
+            novoComentario.innerHTML = `
+                <strong>${nome}</strong> (${email}) disse:
+                <p>${comentario}</p>
+                <hr>
+            `;
+
+            // Adiciona o novo comentário à lista de comentários
+            document.getElementById('comentarios-enviados').appendChild(novoComentario);
+
+            // Limpa o formulário
+            document.getElementById('form-comentario').reset();
+        });
+    </script>
+
+</body>
+</html>

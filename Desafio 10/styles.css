@@ -1,0 +1,93 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #283618; /* Verde musgo escuro para o fundo */
+    color: #fefae0; /* Bege claro para o texto */
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #606c38; /* Verde musgo médio */
+    color: #ffffff; /* Texto branco */
+    border-bottom: 5px solid #3a4a2a; /* Borda verde musgo mais escura */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h2 {
+    color: #dda15e; /* Laranja claro para títulos secundários */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.filmes {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.filme {
+    background-color: #3a4a2a; /* Verde musgo mais escuro para o fundo dos filmes */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 10px 0;
+    color: #fefae0; /* Bege claro para o texto */
+}
+
+.classificacao {
+    margin-top: 15px;
+}
+
+.estrelas {
+    display: flex;
+    gap: 5px;
+}
+
+.estrelas input[type="radio"] {
+    display: none; /* Esconde os inputs de rádio */
+}
+
+.estrelas label {
+    font-size: 24px;
+    color: #ccc; /* Cinza para estrelas não selecionadas */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.estrelas input[type="radio"]:checked ~ label {
+    color: #ffd700; /* Dourado para estrelas selecionadas */
+}
+
+.estrelas label:hover,
+.estrelas input[type="radio"]:hover ~ label {
+    color: #ffd700; /* Dourado ao passar o mouse */
+}
+
+/* Estilo para links (caso adicione algum no futuro) */
+a {
+    color: #dda15e; /* Laranja claro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

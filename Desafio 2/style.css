@@ -1,0 +1,66 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #E6F4F1; /* Fundo azul claro suave */
+    color: #333; /* Cor do texto principal */
+}
+
+h1 {
+    color: #0077B6; /* Azul mais escuro para o título */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos do formulário */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* Fundo branco para o formulário */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #005F73; /* Azul escuro para as labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 99%;
+    padding: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #90E0EF; /* Borda azul clara */
+    border-radius: 7px;
+    font-size: 20px;
+    color: #333;
+    background-color: #F0F8FF; /* Fundo azul bem claro para os campos */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #0077B6; /* Borda azul mais escura ao focar */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.5); /* Sombra ao focar */
+}
+
+input[type="submit"] {
+    background-color: #0077B6; /* Azul escuro para o botão */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+input[type="submit"]:hover {
+    background-color: #023E8A; /* Azul mais escuro ao passar o mouse */
+}
