@@ -4,5 +4,4 @@
 
 À adicionar:
 - Integração com um banco de dados
-- Funções em javascript
 - Mais informações  
